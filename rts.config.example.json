@@ -1,0 +1,25 @@
+{
+  "org": { "name": "Acme", "domains": ["acme.example"], "lead": "ceo@acme.example" },
+  "clients": [
+    {
+      "id": "northwind",
+      "name": "Northwind",
+      "shortname": "NW",
+      "since": "2026-01-15",
+      "slackChannel": null,
+      "metaAccounts": [],
+      "tiktokAdvertisers": []
+    }
+  ],
+  "bucket": null,
+  "slack": { "workspace": "acme", "channelPrefixes": ["client-"] },
+  "linear": { "workspace": "acme", "engTeam": "ENG", "conceptTeam": null, "conceptLabels": [], "parkedStates": [] },
+  "github": { "org": "acme", "focusAuthor": null },
+  "calendar": { "domain": "acme.example" },
+  "sentry": { "api": "https://sentry.io/api/0", "org": null, "project": null },
+  "meta": { "ownAdName": null },
+  "tiktok": { "ownAdName": null },
+  "spend": { "gcpProject": null, "gcpBillingTable": null },
+  "workspace": { "domain": "acme.example", "admin": null },
+  "sessions": { "gcpProject": null }
+}

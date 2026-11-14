@@ -1,0 +1,13 @@
+node_modules/
+dist/
+data/
+.env
+.DS_Store
+logs/
+
+.vercel
+rts.config.json
+.env.*
+!.env.example
+*.pem
+*-key.json

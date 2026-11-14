@@ -1,0 +1,44 @@
+{
+  "name": "validcraft",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "pull:linear": "tsx scripts/sources/linear.ts",
+    "pull:slack": "tsx scripts/sources/slack.ts",
+    "pull:notion": "tsx scripts/sources/notion.ts",
+    "pull:github": "tsx scripts/sources/github.ts",
+    "pull:calendar": "tsx scripts/sources/calendar.ts",
+    "pull:sentry": "tsx scripts/sources/sentry.ts",
+    "pull:meta-activity": "tsx scripts/sources/meta-activity.ts",
+    "pull:tiktok-activity": "tsx scripts/sources/tiktok-activity.ts",
+    "pull:sessions": "tsx scripts/sources/sessions.ts",
+    "pull:spend": "tsx scripts/sources/spend.ts",
+    "pull:workspace": "tsx scripts/sources/workspace.ts",
+    "pull:ops": "tsx scripts/sources/ops.ts",
+    "registry": "tsx scripts/registry.ts",
+    "week": "tsx scripts/week.ts",
+    "pull": "tsx scripts/pull.ts",
+    "build:data": "tsx scripts/build-data.ts",
+    "build:parquet": "tsx scripts/build-parquet.ts",
+    "fixture": "tsx scripts/make-fixture.ts",
+    "check": "tsc --noEmit",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "@auth/core": "^0.41.3",
+    "hyparquet": "^1.32.0",
+    "hyparquet-writer": "^0.18.0",
+    "phaser": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.43",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.7"
+  }
+}

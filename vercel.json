@@ -1,0 +1,10 @@
+{
+  "framework": "vite",
+  "buildCommand": "vite build",
+  "outputDirectory": "dist",
+  "rewrites": [
+    { "source": "/__rts/(.*)", "destination": "/api/sign?kind=rts&object=$1" },
+    { "source": "/data/library/(.*)", "destination": "/api/sign?kind=library&object=$1" },
+    { "source": "/data/gear.json", "destination": "/api/sign?kind=gear&object=gear.json" }
+  ]
+}
